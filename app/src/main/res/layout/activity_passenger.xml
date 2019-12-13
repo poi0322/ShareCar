@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        >
+
+        <TextView
+            android:id="@+id/passenger_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="현재 날짜"
+            android:textSize="15dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text= "게시판"
+            android:layout_marginTop="50dp"
+            android:textSize="30dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp">
+
+        <ListView
+            android:id="@+id/passenger_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </ListView>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

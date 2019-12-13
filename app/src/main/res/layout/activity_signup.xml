@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:layout_marginTop="50dp"
+        android:textSize="60dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_below="@+id/signup_title"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="이름"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/signup_id"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/signup_name"
+        android:layout_centerHorizontal="true"
+        android:hint="email"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/signup_birth"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/signup_id"
+        android:layout_centerHorizontal="true"
+        android:hint="생년월일 6글자"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/signup_birth"
+        android:layout_marginTop="2dp"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signup_submit_button"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/signup_password"
+        android:layout_alignEnd="@+id/signup_password"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="75dp"
+        android:text="Submit"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

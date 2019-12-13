@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "34127708957",
+    "firebase_url": "https://sharecar-ea5db.firebaseio.com",
+    "project_id": "sharecar-ea5db",
+    "storage_bucket": "sharecar-ea5db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34127708957:android:5aebaa3a1b5dd8d42e17f4",
+        "android_client_info": {
+          "package_name": "com.example.sharecar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34127708957-s98u9lmsqnsu2o8gp046oqfcock1ahkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3JMFBlJ-NHiR8VoEQ8odXPUBek0qAS7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34127708957-s98u9lmsqnsu2o8gp046oqfcock1ahkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sharecar">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAJVsyn4gd7KchzxhPYrNfEcV2vl2uoZlA"
+            />
+
+        <activity android:name="com.example.sharecar.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.sharecar.DriverMypageActivity"></activity>
+        <activity android:name="com.example.sharecar.ConformPassengerActivity" />
+        <activity android:name="com.example.sharecar.SelectCarfullActivity" />
+        <activity android:name="com.example.sharecar.SelectPassegerActivity" />
+        <activity android:name="com.example.sharecar.SignupActivity" />
+        <activity android:name="com.example.sharecar.PassengerActivity" />
+        <activity android:name="com.example.sharecar.DriverActivity" />
+        <activity android:name="com.example.sharecar.ModeActivity" />
+
+    </application>
+
+</manifest>

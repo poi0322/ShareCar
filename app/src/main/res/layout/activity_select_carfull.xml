@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C90D0D"
+    android:orientation="vertical"
+    >
+
+
+            <TextView
+                android:id="@+id/select_carfull_drivername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="50dp"
+                android:text="운전자 이름"/>
+
+
+
+            <TableLayout
+                android:id="@+id/select_carfull_table1"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_carfull_drivername"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="출발지" />
+
+                    <TextView
+                        android:id="@+id/select_carfull_start"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="7"
+                        android:text="강원도 원주시 흥업면"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="도착지" />
+
+                    <TextView
+                        android:id="@+id/select_carfull_destination"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="7"
+                        android:text="연세대"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="출발날짜" />
+
+                    <TextView
+                        android:id="@+id/select_carfull_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="7"
+                        android:text="여자"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="출발시간" />
+
+                    <TextView
+                        android:id="@+id/select_carfull_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="7"
+                        android:text="37세"
+                        android:textColor="#000000" />
+                </TableRow>
+            </TableLayout>
+
+
+
+            <TableLayout
+                android:id="@+id/select_carfull_table2"
+                android:layout_below="@+id/select_carfull_table1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/select_carfull_mapView"
+                        android:layout_width="0dp"
+                        android:layout_height="300dp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+            </TableLayout>
+
+    <Button
+        android:id="@+id/select_carfull_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_carfull_table2"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="4dp"
+        android:text="카풀 신청" />
+
+        </RelativeLayout>
+
+
+

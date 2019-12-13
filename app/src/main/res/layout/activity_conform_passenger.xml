@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C90D0D"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/conform_passegername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:text="승객 이름"/>
+
+
+
+    <TableLayout
+        android:id="@+id/select_carfull_table1"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conform_passegername"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="위치" />
+
+            <TextView
+                android:id="@+id/conform_passeger_place"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="7"
+                android:text="승객위치"
+                android:textColor="#000000" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+    <TableLayout
+        android:id="@+id/select_carfull_table2"
+        android:layout_below="@+id/select_carfull_table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/conform_passeger_mapView"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/conform_passeger_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_carfull_table2"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="4dp"
+        android:text="카풀 신청" />
+
+</RelativeLayout>
+
+
+

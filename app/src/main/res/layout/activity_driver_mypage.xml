@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverMypageActivity">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/driver_mypage_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <ListView
+        android:id="@+id/driver_mypage_listview"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@+id/driver_mypage_mapView"/>
+
+    <Button
+        android:id="@+id/driver_mypage_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카풀완료"
+        android:layout_below="@+id/driver_mypage_listview"/>
+
+
+</RelativeLayout>
