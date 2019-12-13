@@ -146,11 +146,12 @@
                                 android:layout_height="match_parent"
                                 android:paddingTop="8dp">
 
-                                <com.google.android.gms.maps.MapView
+                                <LinearLayout
                                     android:id="@+id/driver_mapView"
                                     android:layout_width="0dp"
                                     android:layout_height="300dp"
-                                    android:layout_weight="1" />
+                                    android:layout_weight="1"
+                                    android:orientation="vertical" />
                             </TableRow>
 
                         </TableLayout>

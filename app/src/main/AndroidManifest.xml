@@ -18,23 +18,11 @@
             android:value="AIzaSyAJVsyn4gd7KchzxhPYrNfEcV2vl2uoZlA"
             />
 
-        <activity android:name="com.example.sharecar.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
 
         <activity android:name="com.example.sharecar.DriverMypageActivity"></activity>
         <activity android:name="com.example.sharecar.ConformPassengerActivity" />
         <activity android:name="com.example.sharecar.SelectCarfullActivity" />
         <activity android:name="com.example.sharecar.SelectPassegerActivity" />
-        <activity android:name="com.example.sharecar.SignupActivity" />
-        <activity android:name="com.example.sharecar.PassengerActivity" />
-        <activity android:name="com.example.sharecar.DriverActivity" />
-        <activity android:name="com.example.sharecar.ModeActivity" />
 
     </application>
 

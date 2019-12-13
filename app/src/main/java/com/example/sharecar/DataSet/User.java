@@ -11,8 +11,8 @@ public class User {
     public User() {
     }
     public User(String userName,
-            String userBirth
-            ){
+                String userBirth
+    ){
         this.userName = userName;
         this.userBirth = userBirth;
 //        Date date = new Date();
