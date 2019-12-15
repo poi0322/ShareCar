@@ -9,12 +9,12 @@
 
 
     <TextView
-        android:id="@+id/conform_passegername"
+        android:id="@+id/conform_drivername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:textSize="50dp"
-        android:text="승객 이름"/>
+        android:text="드라이버 이름"
+        android:textSize="50dp" />
 
 
 
@@ -23,7 +23,7 @@
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/conform_passegername"
+        android:layout_below="@+id/conform_drivername"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp">
@@ -39,10 +39,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="위치" />
+                android:text="출발시간" />
 
             <TextView
-                android:id="@+id/conform_passeger_place"
+                android:id="@+id/dep_time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
@@ -56,37 +56,30 @@
 
 
 
-    <TableLayout
-        android:id="@+id/select_carfull_table2"
+    <LinearLayout
+        android:id="@+id/select_mapview"
         android:layout_below="@+id/select_carfull_table1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="8dp">
 
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/conform_passeger_mapView"
-                android:layout_width="0dp"
-                android:layout_height="300dp"
-                android:layout_weight="1" />
-        </TableRow>
-
-    </TableLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/conform_passeger_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/select_carfull_table2"
+        android:layout_below="@+id/select_mapview"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_margin="4dp"
-        android:text="카풀 신청" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="카풀 취소" />
 
 </RelativeLayout>
 

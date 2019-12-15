@@ -1,18 +1,21 @@
 package com.example.sharecar.DataSet;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class User {
+    private String uid;
+    private String carfull;
     private String userName;
     private String userBirth;
+    private double Latitude;
+    private double Longitude;
 //    private String age;
 
     public User() {
     }
-    public User(String userName,
-                String userBirth
-    ){
+    public User(String uid, String carfull, String userName,
+                String userBirth,
+                double latitude, double longitude){
+        this.uid = uid;
+        this.carfull = carfull;
         this.userName = userName;
         this.userBirth = userBirth;
 //        Date date = new Date();
@@ -20,6 +23,8 @@ public class User {
 //        int iage = Integer.parseInt(sdf.format(date)) / 10000 -
 //                Integer.parseInt(userBirth) / 10000;
 //        this.age = String.valueOf(iage);
+        Latitude = latitude;
+        Longitude = longitude;
     }
 
     public String getUserName() {
@@ -36,6 +41,38 @@ public class User {
 
     public void setUserBirth(String userBirth) {
         this.userBirth = userBirth;
+    }
+
+    public String getCarfull() {
+        return carfull;
+    }
+
+    public void setCarfull(String carfull) {
+        this.carfull = carfull;
+    }
+
+    public double getLatitude() {
+        return Latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        Latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return Longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        Longitude = longitude;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
 //    public String getAge() {

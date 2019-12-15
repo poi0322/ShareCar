@@ -1,20 +1,14 @@
 package com.example.sharecar;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.sharecar.DataSet.User;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -56,9 +50,9 @@ public class SignupActivity extends AppCompatActivity {
                     String uid = user.getUid();
                     DatabaseReference userRef = rootRef.child("users");
                     userRef.child(uid).setValue(new User(
-                            name.getText().toString(),
-                            birth.getText().toString()
-                    ));
+                            uid, "", name.getText().toString(),
+                            birth.getText().toString(),
+                            0, 0));
 
                     Toast.makeText(SignupActivity.this, "회원가입이 성공", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
