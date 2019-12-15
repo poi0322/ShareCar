@@ -53,6 +53,7 @@ public class SignupActivity extends AppCompatActivity {
                             uid, "", name.getText().toString(),
                             birth.getText().toString(),
                             0, 0));
+                    rootRef.child("users").child(uid).child("carfull").setValue(null);
 
                     Toast.makeText(SignupActivity.this, "회원가입이 성공", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);

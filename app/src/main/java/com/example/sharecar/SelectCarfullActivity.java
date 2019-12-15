@@ -56,6 +56,9 @@ public class SelectCarfullActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private DatabaseReference rootRef;
 
+    private double latitude;
+    private double longitude;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +68,13 @@ public class SelectCarfullActivity extends AppCompatActivity {
         Intent intent = getIntent();
         final String key = intent.getStringExtra("key");
         gps = new GPSInfo(this);
+
+        if (gps.isGetLocation()) {
+            latitude = gps.getLatitude();
+            longitude = gps.getLongitude();
+        } else {
+            gps.showSettingsAlert();
+        }
 
         name = findViewById(R.id.select_carfull_drivername);
         start = findViewById(R.id.select_carfull_start);
@@ -161,8 +171,8 @@ public class SelectCarfullActivity extends AppCompatActivity {
             carfull.setValue("on");
 
             DatabaseReference pos = rootRef.child("users").child(user.getUid());
-            pos.child("Latitude").setValue(gps.getLatitude());
-            pos.child("Longitude").setValue(gps.getLongitude());
+            pos.child("Latitude").setValue(latitude);
+            pos.child("Longitude").setValue(longitude);
 
             rootRef.child("users").child(user.getUid()).child("carfull").setValue(key);
 

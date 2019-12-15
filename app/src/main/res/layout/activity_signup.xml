@@ -33,7 +33,7 @@
         android:layout_below="@+id/signup_name"
         android:layout_centerHorizontal="true"
         android:hint="email"
-        android:inputType="phone" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/signup_birth"
@@ -41,7 +41,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/signup_id"
         android:layout_centerHorizontal="true"
-        android:hint="생년월일 6글자"
+        android:hint="생년월일 8글자"
         android:inputType="number" />
 
     <EditText
